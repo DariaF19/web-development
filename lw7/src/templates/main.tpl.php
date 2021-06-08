@@ -147,9 +147,9 @@
           <hr class="form-title__line" />
         </div>
         <form class="form" method="post" action="index.php#write-me">
-          <? if(isset($args['save_status'])): ?>
+          <? if(isset($args['save_status']) ): ?>
             <div class="form__info-box">
-              <?= $args['save_status']; ?>
+            <?= $args['save_status'] ? 'Данные сохранены' : 'Данные не сохранены'; ?>
             </div>
           <? endif; ?>
           <label class="form__label form__label_required">Ваше имя</label>
